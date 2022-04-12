@@ -20,7 +20,7 @@ resource "google_storage_notification" "notification" {
 }
 
 resource "google_pubsub_topic_iam_binding" "binding" {
-  members = ["serviceAccount:tf-gke-gke-test-1-6fwu@nik-learning.iam.gserviceaccount.com"]
+  members = ["serviceAccount:<>.iam.gserviceaccount.com"]
   role    = "roles/pubsub.publisher"
   topic   = google_pubsub_topic.pubsub.id
 }
