@@ -26,6 +26,6 @@ resource "google_pubsub_topic_iam_binding" "binding" {
 }
 
 resource "google_pubsub_subscription" "echo" {
-  name  = "echo"
+  name  = "echo-1"
   topic = google_pubsub_topic.pubsub.name
 }
